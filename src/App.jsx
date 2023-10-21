@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { Juego } from './component/juego'
-
+import { Usuario } from './component/usuario'
+import { Categoria } from './component/categoria'
+import { UltimoJuego } from './component/ultimoJuego'
+ 
 function App() {
   const [count, setCount] = useState(0)
 
@@ -84,7 +87,7 @@ function App() {
                 <li className="nav-item dropdown no-arrow">
                   <a className="nav-link dropdown-toggle" href="/" id="userDropdown">
                     <span className="mr-2 d-none d-lg-inline text-gray-600 small">Walter White</span>
-                    <img className="img-profile rounded-circle" src="assets/images/dummy-avatar.jpg" width="60"></img>
+                    <img className="img-profile rounded-circle" src="assets/images/Logo_GQS.png" width="60"></img>
                   </a>
                 </li>
 
@@ -95,7 +98,7 @@ function App() {
             <div className="container-fluid">
 
               <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+                <h1 className="h3 mb-0 text-gray-800">Game Questore</h1>
               </div>
 
               <div className="row">
@@ -105,53 +108,17 @@ function App() {
                 </div>
 
                 <div className="col-md-4 mb-4">
-                  <div className="card border-left-success shadow h-100 py-2">
-                    <div className="card-body">
-                      <div className="row no-gutters align-items-center">
-                        <div className="col mr-2">
-                          <div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Amount in products</div>
-                          <div className="h5 mb-0 font-weight-bold text-gray-800">$546.456</div>
-                        </div>
-                        <div className="col-auto">
-                          <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Usuario><p>Cantidad de Usuarios</p></Usuario>
                 </div>
 
                 <div className="col-md-4 mb-4">
-                  <div className="card border-left-warning shadow h-100 py-2">
-                    <div className="card-body">
-                      <div className="row no-gutters align-items-center">
-                        <div className="col mr-2">
-                          <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Users quantity
-                          </div>
-                          <div className="h5 mb-0 font-weight-bold text-gray-800">38</div>
-                        </div>
-                        <div className="col-auto">
-                          <i className="fas fa-user-check fa-2x text-gray-300"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <Categoria><p>Cantidad de Categorias</p></Categoria>
               </div>
+            </div>
 
               <div className="row">
                 <div className="col-lg-6 mb-4">
-                  <div className="card shadow mb-4">
-                    <div className="card-header py-3">
-                      <h6 className="m-0 font-weight-bold text-primary">Last product in Data Dase</h6>
-                    </div>
-                    <div className="card-body">
-                      <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" Style="width: 25rem;" src="assets/images/product_dummy.svg" alt="image dummy"></img>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
-                      <a target="_blank" rel="nofollow" href="/">View product detail</a>
-                    </div>
-                  </div>
+                  <UltimoJuego><p>Ultimo juego creado</p></UltimoJuego>
                 </div>
 
                 <div className="col-lg-6 mb-4">
