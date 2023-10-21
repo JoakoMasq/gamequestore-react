@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Children } from 'react';
 
-export function UltimoJuego() {
+export function UltimoJuego({Children}) {
   const [ultimoJuego, setUltimoJuego] = useState(null);
 
   useEffect(() => {
@@ -16,11 +16,13 @@ export function UltimoJuego() {
   return (
     <div className="card shadow mb-4">
       <div className="card-header py-3">
-        <h6 className="m-0 font-weight-bold text-primary">Last product in Data Dase</h6>
+        <h6 className="m-0 font-weight-bold text-primary">{Children}</h6>
       </div>
       <div className="card-body">
+      
         {ultimoJuego ? (
           <>
+           <h1 className="text-center m-0 font-weight-bold text-primary">{ultimoJuego.nombre}</h1>
             <div className="text-center">
               <img
                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"

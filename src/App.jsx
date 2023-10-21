@@ -4,6 +4,7 @@ import { Juego } from './component/juego'
 import { Usuario } from './component/usuario'
 import { Categoria } from './component/categoria'
 import { UltimoJuego } from './component/ultimoJuego'
+import { UltimoUsuario } from './component/ultimoUsuario'
  
 function App() {
   const [count, setCount] = useState(0)
@@ -120,6 +121,11 @@ function App() {
                 <div className="col-lg-6 mb-4">
                   <UltimoJuego><p>Ultimo juego creado</p></UltimoJuego>
                 </div>
+
+                <div className="col-lg-6 mb-4">
+                <UltimoUsuario><p>Ultimo usuario creado</p></UltimoUsuario>
+                </div>
+
 
                 <div className="col-lg-6 mb-4">
                   <div className="card shadow mb-4">
