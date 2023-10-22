@@ -1,6 +1,6 @@
 import { useState, useEffect, Children } from 'react';
 
-export function UltimoJuego({Children}) {
+export function UltimoJuego({children}) {
   const [ultimoJuego, setUltimoJuego] = useState(null);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export function UltimoJuego({Children}) {
   return (
     <div className="card shadow mb-4">
       <div className="card-header py-3">
-        <h6 className="m-0 font-weight-bold text-primary">{Children}</h6>
+        <h6 className="text-center m-0 font-weight-bold text-primary">{children}</h6>
       </div>
       <div className="card-body">
       
