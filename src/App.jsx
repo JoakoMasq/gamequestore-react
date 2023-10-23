@@ -25,25 +25,20 @@ function App() {
           <li className="nav-item active">
             <a className="nav-link" href="/">
               <i className="fas fa-fw fa-tachometer-alt"></i>
-              <span>Dashboard</span></a>
+              <span>Page</span></a>
           </li>
           <hr className="sidebar-divider"></hr>
           <div className="sidebar-heading">Actions</div>
           <li className="nav-item">
-            <a className="nav-link collapsed" href="/">
+            <a className="nav-link collapsed" href="http://localhost:3030/product/create">
               <i className="fas fa-fw fa-folder"></i>
-              <span>Pages</span>
+              <span>Crear Juego</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="http://localhost:3030/register">
               <i className="fas fa-fw fa-chart-area"></i>
-              <span>Charts</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              <i className="fas fa-fw fa-table"></i>
-              <span>Tables</span></a>
+              <span>Registrar Usuario</span></a>
           </li>
           <hr className="sidebar-divider d-none d-md-block"></hr>
         </ul>
@@ -112,7 +107,7 @@ function App() {
 
                 <CategoriaConProductos><h3>Categoria con sus Juegos</h3></CategoriaConProductos>
 
-                <JuegoDetalle><h3>Categoria con sus Juegos</h3></JuegoDetalle>
+                <JuegoDetalle><h3>Listado de Juegos</h3></JuegoDetalle>
               </div>
             </div>
 
